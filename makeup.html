@@ -1,0 +1,293 @@
+<html>
+<head>
+<title>Makeup</title> 
+
+    <!--favicon-->
+     <link rel="shortcut icon" id="favicon" href="https://static.tumblr.com/2f814c91524e3fb9c547b7df965dabbc/ck5xxjt/4J1n2hr84/tumblr_static_photo.JPG" />
+    
+    <!--css-->
+     <link rel="stylesheet" type="text/css" href="cottonRosebody.css">
+    
+    <!--JS-->
+   <script>
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1); 
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current control button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}                                       
+                                      
+    function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("myDropdown");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+        if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+        } else {
+            a[i].style.display = "none";
+        }
+    }
+}
+
+    </script>
+    
+</head>
+<body onload="filterSelection('all')">
+    
+    <h1><a href="index.html"><div id="heart">♥</div> Cotton Rose <div id="heart">♥</div></a></h1>
+    <div class="socials_wrapper">
+        <a href="https://www.instagram.com/official_cottonrose/?hl=en"><img src="http://sguru.org/wp-content/uploads/2018/01/instagram-512.png" id="instagram_logo"></a>  
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAPO_dGPsFM19tXox0JuOcI9GL222LfcqdyGGIGiqD7tknNj48Qg" id="twitter_logo">
+    </div>
+    
+
+   
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+  <a href="fragrances.html">Fragrances ♥</a>
+  <a href="makeup.html">Makeup ♥</a>
+  <a href="tops.html">Tops♥</a>
+    <a href="bottoms.html">Bottoms ♥</a>
+  <a href="shoes.html">Shoes ♥</a>
+    <a href="image.gallery.html">Image Gallery ♥</a>
+  <a href="aboutme.cottonRose.html">About Me ♥</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+    <br>
+    
+    
+<div id="myBtnContainer">
+<div class="dropdown">
+<button onclick= "myFunction()" class="dropbtn">Filter Products &#x1f48b;</button>
+  <div id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+      <a href="#" class="btn" onclick="filterSelection('all')">Show All</a>
+      <a href="#" class="btn" onclick="filterSelection('tint')">Skin Tints</a>
+      <a href="#" class="btn" onclick="filterSelection('bb')">BB Creams</a>
+      <a href="#" class="btn" onclick="filterSelection('luminous')">Luminous Foundation</a>
+      <a href="#" class="btn" onclick="filterSelection('matte')">Matte Foundation</a>
+      <a href="#" class="btn" onclick="filterSelection('powder')">Powder Foundation</a>
+<!--      <a href="#" class="btn" onclick="filterSelection('full')">Full Coverage</a> -->
+    </div>
+    </div>
+</div>
+    
+    <div class="container">
+<ul class="products">
+    <li>
+        <div class="filterDiv bb">
+        <a href="https://shop.nordstrom.com/s/bobbi-brown-cc-cream-spf-35/3691464">
+            <img id="products" src="https://d5nkxbcmx4bo4.cloudfront.net/faceview/e9j/g3b/ee/a1f/affimgs/az-large-5446149.jpg">
+            <div class="text">CC Cream SPF 35</div>
+        </a>
+            </div>
+    </li>
+        
+    <li>
+        <div class="filterDiv tint">
+      <a href="https://www.lauramercier.com/tinted-moisturizer/tinted-moisturizer---oil-free-prod210062.html?shades=AllShades&color=Porcelain" >
+            <img id="products" src="https://www.adorebeauty.com.au/media/product/21d/laura-mercier-tinted-moisturiser-oil-free-spf20-by-laura-mercier-12a.jpg">
+            <div class="text">Laura Mercier Tinted Moisturizer</div>
+        </a>  
+            </div>
+    </li>
+    <li>
+        <div class="filterDiv bb">
+    <a href="https://www.sephora.com/product/bb-tinted-treatment-12-hour-primer-broad-spectrum-spf-30-sunscreen-P377542">
+            <img id="products" src="https://static-reg.lximg.com/images/pictures/43008/closeup_2b989eafd0d789491d19f316047bd7eb570f3386_1493205351_12583_Tarte_WEB.jpg">
+            <div class="text">Tarte BB Tinted Treatment</div>
+        </a> 
+        </div>
+        </li>
+    
+       <li>
+           <div class="filterDiv tint">
+        <a href="https://www.sephora.com/product/hello-fab-triple-protection-skin-tint-with-goji-berry-spf-30-P421024">
+            <img id="products" src="https://www.firstaidbeauty.com/pub/media/catalog/product/cache/image/700x560/593ca0152a366e0f697bf8f144497f65/1/2/12244_fab_skintintlight_nocap_silo_swatch_65_v2_4_5.jpg">
+            <div class="text">FAB Triple Protection Skin Tint</div>
+        </a>
+           </div>
+    </li>
+    
+     <li>
+         <div class="filterDiv tint">
+        <a href="https://www.glossier.com/products/perfecting-skin-tint">
+            <img id="products" src="https://img.makeupalley.com/1/1/8/1/3211529.JPG">
+            <div class="text">Glossier Perfecting Skin Tint</div>
+        </a>
+         </div>
+    </li>
+    
+     <li>
+         <div class="filterDiv luminous">
+        <a href="https://www.sephora.com/product/luminous-silk-foundation-P393401">
+            <img id="products" src="http://imgd1.cosme-de.com/b00000063/8853.jpg">
+            <div class="text">Luminous Silk Foundation</div>
+        </a>
+         </div>
+    </li>
+    
+    
+     <li>
+         <div class="filterDiv luminous">
+        <a href="https://www.narscosmetics.com/USA/all-day-luminous-weightless-foundation/999NAC0000017.html?gclid=CjwKCAjww6XXBRByEiwAM-ZUIOt_Jm5wtTidlg_JtMtlpK2RIFOobq77k1iDP2Oob9rj2sqO8zOVIRoCIcIQAvD_BwE&gclsrc=aw.ds&dclid=COLAx9bY59oCFUsOgQodZOgK4g">
+            <img id="products" src="https://images.bonanzastatic.com/afu/images/09f3/f16f/a5c7_5756612985/__57.jpg">
+            <div class="text">Nars All Day Luminous Weightless Foundation</div>
+        </a>
+         </div>
+    </li>
+    
+     <li>
+         <div class="filterDiv luminous">
+        <a href="https://www.sephora.com/product/traceless-perfecting-foundation-broad-spectrum-spf-15-P422573">
+            <img id="products" src="https://images.glambot.com/f06f89e111e2b3a14e5f73adab1d54d8?">
+            <div class="text">Tom Ford Traceless Perfecting Foundation</div>
+        </a>
+         </div>
+    </li>
+    
+     <li>
+         <div class="filterDiv matte">
+        <a href="https://www.fentybeauty.com/pro-filtr/soft-matte-longwear-foundation/FB30006.html">
+            <img id="products" src="https://i.pinimg.com/originals/70/b7/01/70b70192dea757f62fbb056fda960aba.jpg">
+            <div class="text">Fent Beauty Pro Filt'r</div>
+        </a>
+         </div>
+    </li>
+    
+    <!--
+      <li>
+          <div class="filterDiv replica">
+        <a href="https://www.sephora.com/product/replica-by-fireplace-P404758?skuId=1788058&om_mmc=ppc-GG_192086319_15347127879_pla-81623387919_1788058_49113163959_9031138_c&country_switch=us&lang=en&gclid=Cj0KCQiAnuDTBRDUARIsAL41eDrYmB3KlcnojcL06mOEhrT1KUKRll6BIxHxHqTl0ax8umpu3SD6XuwaAs7hEALw_wcB&gclsrc=aw.ds">
+            <img id="products" src="https://biutifulshop.com/wp-content/uploads/2017/03/parfum-replica-margiela-by-the-fireplace.jpg">
+            <div class="text">By the Fireplace</div>
+        </a>
+          </div>
+    </li>
+    
+    
+    <li>
+        <div class="filterDiv replica">
+        <a href="https://www.sephora.com/product/replica-beach-walk-P385358?icid2=similar%20products:p385358:product">
+            <img id="products" src="https://biutifulshop.com/wp-content/uploads/2017/03/parfum-replica-margiela-beach-walk.jpg">
+            <div class="text">Beach Walk</div>
+        </a>
+        </div>
+    </li>
+    
+      <li>
+          <div class="filterDiv replica">
+        <a href="https://www.sephora.com/product/replica-promenade-in-the-gardens-P385348?skuId=1602267&om_mmc=ppc-GG_220827279_17572215519_aud-376785856971:pla-387461093177_1602267_56697993399_9031138_c&country_switch=us&lang=en&gclid=Cj0KCQiAnuDTBRDUARIsAL41eDqabAGI5vJUp3JV_ISxOLvhNnWV5D12VGznwVYSPcXP_olyDXeplGAaAgtQEALw_wcB&gclsrc=aw.ds">
+            <img id="products" src="https://biutifulshop.com/wp-content/uploads/2017/03/parfum-replica-margiela-promenade-in-the-gardens.jpg">
+            <div class="text">Promenade in the Gardens</div>
+        </a>
+          </div>
+    </li>
+    
+          <li>
+              <div class="filterDiv byredo">
+        <a href="https://www.sephora.com/product/replica-by-fireplace-P404758?skuId=1788058&om_mmc=ppc-GG_192086319_15347127879_pla-81623387919_1788058_49113163959_9031138_c&country_switch=us&lang=en&gclid=Cj0KCQiAnuDTBRDUARIsAL41eDrYmB3KlcnojcL06mOEhrT1KUKRll6BIxHxHqTl0ax8umpu3SD6XuwaAs7hEALw_wcB&gclsrc=aw.ds">
+            <img id="products" src="https://kanarygifts.com/media/catalog/product/cache/1/image/fc76f511cbe633bbd1074861184b5f43/b/y/byredo-gypsy_water_1.jpg">
+            <div class="text">Gypsy Water</div>
+        </a>
+              </div>
+    </li>
+    
+    
+    <li>
+        <div class="filterDiv byredo">
+        <a href="https://www.sephora.com/product/replica-beach-walk-P385358?icid2=similar%20products:p385358:product">
+            <img id="products" src="https://www.mecca.com.au/on/demandware.static/-/Sites-mecca-online-catalog/default/dwbbb5ec95/product/byredo/hr/i-008254-rose-noir-edp-100ml-1-940.jpg">
+            <div class="text">Rose Noir</div>
+        </a>
+        </div>
+    </li>
+    
+      <li>
+          <div class="filterDiv byredo">
+        <a href="https://www.sephora.com/product/replica-promenade-in-the-gardens-P385348?skuId=1602267&om_mmc=ppc-GG_220827279_17572215519_aud-376785856971:pla-387461093177_1602267_56697993399_9031138_c&country_switch=us&lang=en&gclid=Cj0KCQiAnuDTBRDUARIsAL41eDqabAGI5vJUp3JV_ISxOLvhNnWV5D12VGznwVYSPcXP_olyDXeplGAaAgtQEALw_wcB&gclsrc=aw.ds">
+            <img id="products" src="https://www.mecca.com.au/on/demandware.static/-/Sites-mecca-online-catalog/default/dw6fe71a98/product/byredo/hr/i-008293-la-tulipe-edp-100ml-1-940.jpg">
+            <div class="text">La Tulipe</div>
+        </a>
+          </div>
+    </li>
+    
+      
+     <li>
+         <div class="filterDiv chloe">
+        <a href="https://www.sephora.com/product/reserve-rain-P404358?skuId=1773183&om_mmc=ppc-GG_381463959_27499858719_pla-178160012919_1773183_97594830399_9031138_c&country_switch=us&lang=en&gclid=EAIaIQobChMImOmnmZWO2QIVi7jACh3CrANyEAQYASABEgLwAPD_BwE&gclsrc=aw.ds">
+            <img id="products" src="http://i.beautyspin.com/mailing/16/chloe/chlchlw_aedp10_02__8.jpg">
+            <div class="text">Rain</div>
+        </a>
+         </div>
+    </li>
+    
+     <li>
+         <div class="filterDiv chloe">
+        <a href="https://www.sephora.com/product/reserve-smoked-vetiver-P404308?keyword=smoked%20vet">
+            <img id="products" src="https://ius.notino.com/view/chloe/chlrosw_aedt10_01-o__12.jpg">
+            <div class="text">Smoked Vetiver</div>
+        </a>
+         </div>
+    </li>
+    
+     <li>
+         <div class="filterDiv chloe">
+        <a href="https://www.sephora.com/product/reserve-blonde-rose-P404360">
+            <img id="products" src="https://1.static.fragrancenet.com/images/photos/900x900/157352.jpg">
+            <div class="text">Blonde Rose</div>
+        </a>
+         </div>
+    </li>
+    -->
+</ul>
+    </div>           
+</body>
+</html>

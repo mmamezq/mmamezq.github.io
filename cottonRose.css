@@ -1,0 +1,372 @@
+
+
+
+.topnav {
+  margin-left: 20%;
+  margin-right: 20%;
+    text-align: center;
+
+}
+
+.topnav a {
+border: solid 1.5px  #edd3d4;
+    font-family: monospace;
+    font-size: 1em;
+    border-radius:12px;
+    position:relative;
+    padding: 5px;
+}
+
+.topnav a:hover {
+  border: none;
+  background-color: #f9a2a2;
+  color: white;
+  box-shadow: 0px 0px 1px #777;
+  background-size: 20px 20px;
+  cursor:pointer;
+}
+
+.topnav .active{
+    background-color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+#head_buttons{
+    
+    width:6.25%;
+    
+}
+
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.header{
+    
+}
+
+#header_flower{
+    height: 3em;
+    padding-top: 20px;
+    
+}
+
+h1{
+    background-color: white;
+    text-align: center;
+    font-weight: normal;
+    font-family:"Courier New";
+     border: solid 2px #edd3d4;
+    margin-top: 2%;
+   
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+    
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+
+a:active {
+    text-decoration: none;
+    color: black;
+}
+
+#heart{
+    display:inline-block;
+    color: #fcd2db;
+    
+}
+
+#instagram_logo{
+    width:2.8%;
+    height: 5%;
+    position:fixed;
+    right: 6.05%;
+}
+
+#twitter_logo{
+     width:2.8%;
+    height: 5%;
+    position:fixed;
+    right: 3%;
+}
+
+
+.main_body{
+  height: 80%;
+    width: 100%;
+ /   background-color: #e8edf4;
+    
+
+}
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+    background-color: #e8edf4;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #adcaf1;
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-family:"Courier New";
+  font-size: 2em;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: right;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+#pic_two{
+    width: 45%;
+    height: 500px;
+    border-right: none;
+}
+
+#product_one{
+  width: 45%;
+   height: 500px;
+     
+}
+
+#picture_two{
+    width:500px;
+    height: 500px;
+    border-right: none;
+}
+
+#product_two{
+   
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    background-color: #f0b4bd;
+}
+
+#picture_three{
+    background-color: white;
+    height: 500px;
+    width: 500px;
+}
+
+#product_three{
+    
+    height: 500px;
+    width: 500px;
+}
+
+#picture_four{
+    background-color: white;
+    height: 500px;
+    width: 500px;
+}
+
+#product_four{
+    height: 500px;
+    width: 500px;
+}
+
+#picture_five{
+    background-color: white;
+    height: 500px;
+    width: 500px;
+}
+
+#product_five{
+    background-color: white;
+    height: 550px;
+    width: 500px;
+}
+
+#image_text{
+    opacity:0.89;
+    text-align: left;
+}
+
+
+.shipping-banner-text {
+    color: #aaa;
+    font-weight: none;
+    font-size: 18px;
+    text-align: center;
+    margin-top: -15px;
+    line-height: 1.1;
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+}
+
+.shipping-banner-text span {
+    background: #fff;
+    padding: 0 20px;
+}
+
+.shipping-banner-border {
+    border-bottom: 2px solid #aaa;
+}
+
+@media (max-width: 900px) {
+    .shipping-banner-text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 500px) {
+    .shipping-banner {
+        margin: 5px 0 10px 0;
+        padding: 10px 20px;
+    }
+    .shipping-banner-border {
+        display: none;
+    }
+    .shipping-banner-text {
+        color: #555;
+        margin-top: 0;
+    }
+    
+    .shipping-banner-text span {
+        background: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .shipping-banner img {
+        display: none;
+    }
+}
+
+.shipping-banner {
+    margin: 20px 0;
+}
+
+#cont1_pic{
+    width:350px;
+    height:350px;
+}
+
+#cont2_pic{
+    width:40%;
+    height:40%;
+}
+
+ul{
+  text-align: center;
+  list-style-position: inside;
+
+}
+
+li{
+    display:inline;
+    padding:5;
+    
+}
