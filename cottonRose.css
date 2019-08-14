@@ -371,11 +371,11 @@ li{
     
 }
 
-.aboutme {
+#aboutme {
 background-color: #ffe5eb;
 }
 
-.me{
+#me{
 width: 40%;
   height: 40%;
 }
