@@ -234,7 +234,5 @@ li{
 #me {
     height: 40%;
     width: 40%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
 }
