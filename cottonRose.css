@@ -372,6 +372,10 @@ li{
 }
 
 .aboutme {
-text-align: justify;
-  
+background-color: #ffe5eb;
+}
+
+.me{
+width: 40%;
+  height: 40%;
 }
